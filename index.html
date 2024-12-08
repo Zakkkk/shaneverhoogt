@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shane Verhoogt</title>
+        <link href="src/output.css" rel="stylesheet" />
+    </head>
+    <body class="h-full flex flex-col scroll-smooth">
+        <nav class="flex w-full">
+            <div
+                class="flex flex-row justify-end max-w-screen-lg w-11/12 ml-auto mr-auto"
+            >
+                <a class="p-3 text-lg mr-auto" href="#">Shane Verhoogt</a>
+
+                <a class="p-3 text-lg" href="#about">About</a>
+                <a class="p-3 text-lg" href="#pastwork">Past Work</a>
+                <a class="p-3 text-lg" href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <div
+            class="before:bg-[url('../img/hero.jpg')] h-[40vh] before:bg-no-repeat before:bg-cover before:bg-center before:brightness-[35%] text-gray-100 before:content-[''] before:block before:absolute before:left-0 before:top-0 before:right-0 before:bottom-0 relative before:-z-10 z-10 flex items-center justify-center flex-col gap-2"
+        >
+            <h1 class="text-5xl font-bold text-center">
+                Repairment and Construction
+            </h1>
+            <h2 class="text-2xl">Based in Perth</h2>
+        </div>
+
+        <div
+            class="flex flex-col max-w-screen-lg w-11/12 ml-auto mr-auto py-10"
+        >
+            <h2 class="text-3xl font-bold pb-2" id="about">About</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                ipsa nulla iure facere, at maxime ratione similique, itaque
+                porro ipsam ad cupiditate quam veniam iste, libero vero
+                exercitationem! Nemo, molestias. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ad soluta eius eaque libero,
+            </p>
+        </div>
+
+        <div class="bg-blue-50">
+            <div
+                class="flex flex-col max-w-screen-lg w-11/12 ml-auto mr-auto py-10"
+            >
+                <h2 class="text-3xl font-bold pb-2" id="pastwork">Past Work</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta ipsa nulla iure facere, at maxime ratione similique,
+                    itaque porro ipsam ad cupiditate quam veniam iste, libero
+                    vero exercitationem!
+                </p>
+
+                <div class="py-3 flex flex-row justify-around w-full gap-5">
+                    <img
+                        class="w-full h-full"
+                        src="img/gallery1.jpeg"
+                        alt="Custom bike part"
+                    />
+                    <img
+                        class="w-full h-full"
+                        src="img/gallery2.jpeg"
+                        alt="Custom bike part"
+                    />
+                    <img
+                        class="w-full h-full"
+                        src="img/gallery3.jpeg"
+                        alt="Custom bike part"
+                    />
+                </div>
+
+                <a
+                    class="mt-2 rounded hover:bg-blue-200 transition text-md flex align-middle justify-center px-2 py-2 border border-solid border-blue-300"
+                    href="pastwork"
+                    >See more</a
+                >
+            </div>
+        </div>
+
+        <div
+            class="flex flex-col max-w-screen-lg w-11/12 ml-auto mr-auto py-10"
+        >
+            <h2 class="text-3xl font-bold pb-2" id="contact">Contact</h2>
+            <p>
+                Send me an email at:
+                <span class="underline">email (at) gmail.com</span>
+            </p>
+            <p>Or give me a call at <span>04123</span>45678</p>
+        </div>
+    </body>
+</html>
