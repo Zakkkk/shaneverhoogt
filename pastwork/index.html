@@ -9,15 +9,22 @@
     <body class="h-full flex flex-col scroll-smooth">
         <nav class="flex w-full">
             <div
-                class="flex flex-row justify-end max-w-screen-lg w-11/12 ml-auto mr-auto"
+                class="flex flex-row justify-around sm:justify-end max-w-screen-lg w-11/12 ml-auto mr-auto"
             >
-                <a class="p-3 text-lg mr-auto" href="/">Shane Verhoogt</a>
+                <a class="hidden sm:block p-3 text-lg mr-auto" href="/"
+                    >Shane Verhoogt</a
+                >
 
                 <a class="p-3 text-lg" href="/#about">About</a>
                 <a class="p-3 text-lg" href="#">Past Work</a>
                 <a class="p-3 text-lg" href="/#contact">Contact</a>
             </div>
         </nav>
+
+        <div
+            id="gallery"
+            class="py-3 flex flex-col items-center sm:justify-around w-full gap-5 sm:flex-row sm:flex-wrap"
+        ></div>
 
         <div class="bg-blue-50">
             <div
@@ -31,5 +38,22 @@
                 <p>Or give me a call at <span>04123</span>45678</p>
             </div>
         </div>
+
+        <script defer>
+            const getPictureElement = (pictureNumber) => {
+                return `
+                  <img
+                      class="w-full sm:w-1/3 lg:w-1/4 object-cover w-1/2"
+                      src="../img/gallery${pictureNumber}.jpeg"
+                      alt="Custom bike part, picture ${pictureNumber}"
+                  />
+            `.trim();
+            };
+
+            const galleryDom = document.getElementById("gallery");
+
+            for (let i = 1; i <= 12; i++)
+                galleryDom.innerHTML += getPictureElement(i);
+        </script>
     </body>
 </html>
