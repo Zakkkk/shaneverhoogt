@@ -886,6 +886,10 @@ video {
   width: 50%;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .max-w-xl {
   max-width: 36rem;
 }
@@ -2084,6 +2088,10 @@ video {
 
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .text-left {
