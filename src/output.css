@@ -2843,6 +2843,10 @@ video {
     justify-content: flex-end;
   }
 
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
   .sm\:justify-around {
     justify-content: space-around;
   }
